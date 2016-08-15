@@ -1,0 +1,2 @@
+/Users/heyahui/Library/Developer/Xcode/DerivedData/SkyDemo-gsvnocovnyhxfravqgrqzweedeco/Build/Products/Debug-iphonesimulator/SkyDemo.app
+

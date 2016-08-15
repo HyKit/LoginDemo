@@ -1,0 +1,1 @@
+../../../NIMSDK/SDK/ExportHeaders/VAChat/NIMRTSRecordingInfo.h
