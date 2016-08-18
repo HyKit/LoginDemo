@@ -88,19 +88,10 @@
     UserCenterVC *vc2 = [[UserCenterVC alloc] init];
     UINavigationController *nav2 = [[UINavigationController alloc] initWithRootViewController:vc2];
     
-//    revealViewController.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"侧边动画" image:[[UIImage imageNamed:@"tab_icon_home"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:nil];
-//    nav1.tabBarItem = [[UITabBarItem alloc]initWithTitle:@"首页" image:[[UIImage imageNamed:@"tab_icon_home"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:nil];
-//    nav2.tabBarItem = [[UITabBarItem alloc]initWithTitle:@"个人中心" image:[[UIImage imageNamed:@"tab_icon_user"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:nil];
-//
-//    navPop.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"pop" image:[[UIImage imageNamed:@"tabbar_compose_background_icon_add"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:nil];
-//    
-//    shopNav.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"列表" image:[[UIImage imageNamed:@"tab_icon_list"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:nil];
-//    
-    
     self.viewControllers = @[revealViewController, nav1, navPop, shopNav, nav2];
     self.selectedIndex = 3;
 
-    
+
 }
 
 - (void)clickBtn:(id)sender {

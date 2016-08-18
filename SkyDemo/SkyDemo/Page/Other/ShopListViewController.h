@@ -7,7 +7,19 @@
 //
 
 #import "RootTableViewController.h"
+@class rilegouleView;
 
 @interface ShopListViewController : RootTableViewController
+
+
+@property (nonatomic, strong) rilegouleView *rilegoule;
+
+@property (nonatomic, strong) UIImageView *BlurredView;
+
+@property (nonatomic, strong) NSArray *array;
+
+@property (nonatomic, strong) NSIndexPath *currentIndexPath;
+
+
 
 @end

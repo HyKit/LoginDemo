@@ -35,6 +35,8 @@
     [self configUI];
     [self setApplicationBadgeNumber];
     
+    [self setRightBarButtonItem];
+    
 }
 
 - (void)setApplicationBadgeNumber {
@@ -51,6 +53,9 @@
     [app registerUserNotificationSettings:setting];
 }
 
+- (void)setRightBarButtonItem {
+    
+}
 
 
 - (void)configUI {
@@ -179,7 +184,11 @@
     PhotoAnimationVC *vc = [[PhotoAnimationVC alloc] initWithStyle:UITableViewStyleGrouped];
     vc.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:vc animated:YES];
+    
+    
 }
+
+
 
 
 

@@ -14,6 +14,11 @@
 #import "UIView+Extra.h"
 #import <PureLayout.h>
 
+#import "UIImageView+WebCache.h"
+#import "UIImageView+AFNetworking.h"
+#import "Sky_HttpRequest.h"
+
+
 
 
 
@@ -27,6 +32,13 @@
 //公共宏
 #define RGBACOLOR(r,g,b,a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)]
 #define HEXCOLOR(c) [UIColor colorWithRed:((c>>16)&0xFF)/255.0f green:((c>>8)&0xFF)/255.0f blue:(c&0xFF)/255.0f alpha:1.0f];
+
+
+
+#define kWidth [UIScreen mainScreen].bounds.size.width
+#define kHeight [UIScreen mainScreen].bounds.size.height
+#define kSelfWidth self.frame.size.width
+#define kSelfHeight self.frame.size.height
 
 
 

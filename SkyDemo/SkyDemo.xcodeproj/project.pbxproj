@@ -55,6 +55,18 @@
 		BD4C93121D41BD9000AD1359 /* BannerWebVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BD4C93111D41BD9000AD1359 /* BannerWebVC.m */; };
 		BD4C93151D41BDA300AD1359 /* RootWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD4C93141D41BDA300AD1359 /* RootWebViewController.m */; };
 		BD4C93181D41C3E700AD1359 /* PictureLictVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BD4C93171D41C3E700AD1359 /* PictureLictVC.m */; };
+		BD4F87DC1D64371800016392 /* Sky_HttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = BD4F87DB1D64371800016392 /* Sky_HttpRequest.m */; };
+		BD4F87DF1D6442F900016392 /* MovieListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BD4F87DE1D6442F900016392 /* MovieListCell.m */; };
+		BD4F87E21D64475200016392 /* MovieModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BD4F87E11D64475200016392 /* MovieModel.m */; };
+		BD4F87F31D645C3E00016392 /* BlurImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = BD4F87E81D645C3E00016392 /* BlurImageView.m */; };
+		BD4F87F41D645C3E00016392 /* ContentScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = BD4F87EA1D645C3E00016392 /* ContentScrollView.m */; };
+		BD4F87F51D645C3E00016392 /* ContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = BD4F87EC1D645C3E00016392 /* ContentView.m */; };
+		BD4F87F61D645C3E00016392 /* CustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = BD4F87EE1D645C3E00016392 /* CustomView.m */; };
+		BD4F87F71D645C3E00016392 /* ImageContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = BD4F87F01D645C3E00016392 /* ImageContentView.m */; };
+		BD4F87F81D645C3E00016392 /* rilegouleView.m in Sources */ = {isa = PBXBuildFile; fileRef = BD4F87F21D645C3E00016392 /* rilegouleView.m */; };
+		BD4F87FB1D64621E00016392 /* ShowMovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD4F87FA1D64621E00016392 /* ShowMovieViewController.m */; };
+		BD4F87FD1D658FF500016392 /* main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD4F87FC1D658FF500016392 /* main.storyboard */; };
+		BD4F88001D65905600016392 /* APPApplicationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BD4F87FF1D65905600016392 /* APPApplicationVC.m */; };
 		BD68F0591D485B37000B77D7 /* HyPopMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = BD68F0511D485B37000B77D7 /* HyPopMenuView.m */; };
 		BD68F05A1D485B37000B77D7 /* PopMenuButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BD68F0541D485B37000B77D7 /* PopMenuButton.m */; };
 		BD68F05B1D485B37000B77D7 /* PopMenuModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BD68F0561D485B37000B77D7 /* PopMenuModel.m */; };
@@ -83,6 +95,7 @@
 		BDED5DC31D54380A008FC522 /* NSObject+NewBeeNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = BDED5DC01D54380A008FC522 /* NSObject+NewBeeNotification.m */; };
 		BDED5DC41D54380A008FC522 /* NSObject+PerformBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = BDED5DC21D54380A008FC522 /* NSObject+PerformBlock.m */; };
 		BDED5DC71D546914008FC522 /* ShopListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BDED5DC61D546914008FC522 /* ShopListCell.m */; };
+		BDEFC3A91D61B5BA00BCBEC9 /* CustomAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = BDEFC3A81D61B5BA00BCBEC9 /* CustomAlertView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -176,6 +189,29 @@
 		BD4C93141D41BDA300AD1359 /* RootWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootWebViewController.m; sourceTree = "<group>"; };
 		BD4C93161D41C3E700AD1359 /* PictureLictVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PictureLictVC.h; sourceTree = "<group>"; };
 		BD4C93171D41C3E700AD1359 /* PictureLictVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PictureLictVC.m; sourceTree = "<group>"; };
+		BD4F87DA1D64371800016392 /* Sky_HttpRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sky_HttpRequest.h; sourceTree = "<group>"; };
+		BD4F87DB1D64371800016392 /* Sky_HttpRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sky_HttpRequest.m; sourceTree = "<group>"; };
+		BD4F87DD1D6442F900016392 /* MovieListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieListCell.h; sourceTree = "<group>"; };
+		BD4F87DE1D6442F900016392 /* MovieListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieListCell.m; sourceTree = "<group>"; };
+		BD4F87E01D64475200016392 /* MovieModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieModel.h; sourceTree = "<group>"; };
+		BD4F87E11D64475200016392 /* MovieModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieModel.m; sourceTree = "<group>"; };
+		BD4F87E71D645C3E00016392 /* BlurImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlurImageView.h; sourceTree = "<group>"; };
+		BD4F87E81D645C3E00016392 /* BlurImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlurImageView.m; sourceTree = "<group>"; };
+		BD4F87E91D645C3E00016392 /* ContentScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentScrollView.h; sourceTree = "<group>"; };
+		BD4F87EA1D645C3E00016392 /* ContentScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentScrollView.m; sourceTree = "<group>"; };
+		BD4F87EB1D645C3E00016392 /* ContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentView.h; sourceTree = "<group>"; };
+		BD4F87EC1D645C3E00016392 /* ContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentView.m; sourceTree = "<group>"; };
+		BD4F87ED1D645C3E00016392 /* CustomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomView.h; sourceTree = "<group>"; };
+		BD4F87EE1D645C3E00016392 /* CustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomView.m; sourceTree = "<group>"; };
+		BD4F87EF1D645C3E00016392 /* ImageContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageContentView.h; sourceTree = "<group>"; };
+		BD4F87F01D645C3E00016392 /* ImageContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageContentView.m; sourceTree = "<group>"; };
+		BD4F87F11D645C3E00016392 /* rilegouleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rilegouleView.h; sourceTree = "<group>"; };
+		BD4F87F21D645C3E00016392 /* rilegouleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = rilegouleView.m; sourceTree = "<group>"; };
+		BD4F87F91D64621E00016392 /* ShowMovieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowMovieViewController.h; sourceTree = "<group>"; };
+		BD4F87FA1D64621E00016392 /* ShowMovieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowMovieViewController.m; sourceTree = "<group>"; };
+		BD4F87FC1D658FF500016392 /* main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = main.storyboard; sourceTree = "<group>"; };
+		BD4F87FE1D65905600016392 /* APPApplicationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APPApplicationVC.h; sourceTree = "<group>"; };
+		BD4F87FF1D65905600016392 /* APPApplicationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APPApplicationVC.m; sourceTree = "<group>"; };
 		BD68F0501D485B37000B77D7 /* HyPopMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HyPopMenuView.h; sourceTree = "<group>"; };
 		BD68F0511D485B37000B77D7 /* HyPopMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HyPopMenuView.m; sourceTree = "<group>"; };
 		BD68F0521D485B37000B77D7 /* HyPopMenuViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HyPopMenuViewDelegate.h; sourceTree = "<group>"; };
@@ -232,6 +268,8 @@
 		BDED5DC21D54380A008FC522 /* NSObject+PerformBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+PerformBlock.m"; sourceTree = "<group>"; };
 		BDED5DC51D546914008FC522 /* ShopListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopListCell.h; sourceTree = "<group>"; };
 		BDED5DC61D546914008FC522 /* ShopListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopListCell.m; sourceTree = "<group>"; };
+		BDEFC3A71D61B5BA00BCBEC9 /* CustomAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomAlertView.h; sourceTree = "<group>"; };
+		BDEFC3A81D61B5BA00BCBEC9 /* CustomAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomAlertView.m; sourceTree = "<group>"; };
 		DBC8FD88391130E08C7F4CC9 /* libPods-SkyDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SkyDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -292,6 +330,7 @@
 		BD138F021D40999F00113676 /* PublicClass */ = {
 			isa = PBXGroup;
 			children = (
+				BDEFC3A61D61B5A700BCBEC9 /* AlertView */,
 				BD071EF51D5D9A0000F625B5 /* OMGToast */,
 				BDED5DBE1D54380A008FC522 /* NSObject */,
 				BDED5DB71D5437C7008FC522 /* banner */,
@@ -456,6 +495,9 @@
 			children = (
 				BD26B0B71D3DD0C400AB4164 /* HomePageVC.h */,
 				BD26B0B81D3DD0C400AB4164 /* HomePageVC.m */,
+				BD4F87FE1D65905600016392 /* APPApplicationVC.h */,
+				BD4F87FF1D65905600016392 /* APPApplicationVC.m */,
+				BD4F87FC1D658FF500016392 /* main.storyboard */,
 			);
 			path = HomePage;
 			sourceTree = "<group>";
@@ -478,6 +520,34 @@
 				BD4C93171D41C3E700AD1359 /* PictureLictVC.m */,
 			);
 			path = BannerVC;
+			sourceTree = "<group>";
+		};
+		BD4F87D91D6436DF00016392 /* Sky_HttpRequest */ = {
+			isa = PBXGroup;
+			children = (
+				BD4F87DA1D64371800016392 /* Sky_HttpRequest.h */,
+				BD4F87DB1D64371800016392 /* Sky_HttpRequest.m */,
+			);
+			path = Sky_HttpRequest;
+			sourceTree = "<group>";
+		};
+		BD4F87E61D645C3E00016392 /* ShowMovie */ = {
+			isa = PBXGroup;
+			children = (
+				BD4F87E71D645C3E00016392 /* BlurImageView.h */,
+				BD4F87E81D645C3E00016392 /* BlurImageView.m */,
+				BD4F87E91D645C3E00016392 /* ContentScrollView.h */,
+				BD4F87EA1D645C3E00016392 /* ContentScrollView.m */,
+				BD4F87EB1D645C3E00016392 /* ContentView.h */,
+				BD4F87EC1D645C3E00016392 /* ContentView.m */,
+				BD4F87ED1D645C3E00016392 /* CustomView.h */,
+				BD4F87EE1D645C3E00016392 /* CustomView.m */,
+				BD4F87EF1D645C3E00016392 /* ImageContentView.h */,
+				BD4F87F01D645C3E00016392 /* ImageContentView.m */,
+				BD4F87F11D645C3E00016392 /* rilegouleView.h */,
+				BD4F87F21D645C3E00016392 /* rilegouleView.m */,
+			);
+			path = ShowMovie;
 			sourceTree = "<group>";
 		};
 		BD68F04F1D485B37000B77D7 /* HyPopMenu */ = {
@@ -519,6 +589,7 @@
 		BD8B23B81D3DC13B007A8211 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
+				BD4F87D91D6436DF00016392 /* Sky_HttpRequest */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -590,10 +661,17 @@
 		BDABB5CB1D49DB2D002E1B43 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				BD4F87E61D645C3E00016392 /* ShowMovie */,
 				BDABB5CC1D49DB60002E1B43 /* ShopListViewController.h */,
 				BDABB5CD1D49DB60002E1B43 /* ShopListViewController.m */,
+				BD4F87F91D64621E00016392 /* ShowMovieViewController.h */,
+				BD4F87FA1D64621E00016392 /* ShowMovieViewController.m */,
 				BDED5DC51D546914008FC522 /* ShopListCell.h */,
 				BDED5DC61D546914008FC522 /* ShopListCell.m */,
+				BD4F87DD1D6442F900016392 /* MovieListCell.h */,
+				BD4F87DE1D6442F900016392 /* MovieListCell.m */,
+				BD4F87E01D64475200016392 /* MovieModel.h */,
+				BD4F87E11D64475200016392 /* MovieModel.m */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -700,6 +778,15 @@
 				BDED5DC21D54380A008FC522 /* NSObject+PerformBlock.m */,
 			);
 			path = NSObject;
+			sourceTree = "<group>";
+		};
+		BDEFC3A61D61B5A700BCBEC9 /* AlertView */ = {
+			isa = PBXGroup;
+			children = (
+				BDEFC3A71D61B5BA00BCBEC9 /* CustomAlertView.h */,
+				BDEFC3A81D61B5BA00BCBEC9 /* CustomAlertView.m */,
+			);
+			path = AlertView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -821,6 +908,7 @@
 				BD151EEF1D476C6400F2DAE1 /* chooser-moment-icon-camera-highlighted@2x.png in Resources */,
 				BD151EF51D476C6400F2DAE1 /* chooser-moment-icon-sleep-highlighted@2x.png in Resources */,
 				BD151EF11D476C6400F2DAE1 /* chooser-moment-icon-music-highlighted@2x.png in Resources */,
+				BD4F87FD1D658FF500016392 /* main.storyboard in Resources */,
 				BD151EF61D476C6400F2DAE1 /* chooser-moment-icon-sleep@2x.png in Resources */,
 				BD151EFB1D476C6400F2DAE1 /* Sparkle.png in Resources */,
 				BD151EEA1D476C6400F2DAE1 /* chooser-button-input@2x.png in Resources */,
@@ -923,8 +1011,12 @@
 				BD151EDF1D476C6400F2DAE1 /* BaseViewController.m in Sources */,
 				BD151EDE1D476C6400F2DAE1 /* BaseAnimationController.m in Sources */,
 				BD4C93151D41BDA300AD1359 /* RootWebViewController.m in Sources */,
+				BD4F87F81D645C3E00016392 /* rilegouleView.m in Sources */,
 				BD151EE61D476C6400F2DAE1 /* DCPathCenterButton.m in Sources */,
+				BD4F88001D65905600016392 /* APPApplicationVC.m in Sources */,
+				BD4F87F41D645C3E00016392 /* ContentScrollView.m in Sources */,
 				BD4C93121D41BD9000AD1359 /* BannerWebVC.m in Sources */,
+				BD4F87DC1D64371800016392 /* Sky_HttpRequest.m in Sources */,
 				BDED5DC71D546914008FC522 /* ShopListCell.m in Sources */,
 				BD8B23C91D3DCEFE007A8211 /* RootTableViewController.m in Sources */,
 				BD151F031D476C6400F2DAE1 /* SWRevealViewController.m in Sources */,
@@ -941,12 +1033,19 @@
 				BD151EFE1D476C6400F2DAE1 /* MCFireworksView.m in Sources */,
 				BD151EFD1D476C6400F2DAE1 /* MCFireworksButton.m in Sources */,
 				BD4C93181D41C3E700AD1359 /* PictureLictVC.m in Sources */,
+				BD4F87F71D645C3E00016392 /* ImageContentView.m in Sources */,
+				BD4F87E21D64475200016392 /* MovieModel.m in Sources */,
 				BD8ED77B1D532562005A20D5 /* SkyTabBarVC.m in Sources */,
 				BD151EE51D476C6400F2DAE1 /* DCPathButton.m in Sources */,
 				BD151EFC1D476C6400F2DAE1 /* LeftViewController.m in Sources */,
+				BD4F87DF1D6442F900016392 /* MovieListCell.m in Sources */,
+				BD4F87F61D645C3E00016392 /* CustomView.m in Sources */,
 				BDC15D4A1D47385F003FBBC0 /* UIView+Extra.m in Sources */,
 				BD151EE01D476C6400F2DAE1 /* ComprehensiveCaseController.m in Sources */,
 				BD151EFF1D476C6400F2DAE1 /* RightViewController.m in Sources */,
+				BD4F87F51D645C3E00016392 /* ContentView.m in Sources */,
+				BD4F87F31D645C3E00016392 /* BlurImageView.m in Sources */,
+				BDEFC3A91D61B5BA00BCBEC9 /* CustomAlertView.m in Sources */,
 				BD071EF81D5D9D5C00F625B5 /* OMGToast.m in Sources */,
 				BD68F0591D485B37000B77D7 /* HyPopMenuView.m in Sources */,
 				BDED5DC31D54380A008FC522 /* NSObject+NewBeeNotification.m in Sources */,
@@ -956,6 +1055,7 @@
 				BDC157441D45B007003FBBC0 /* PointsViewController.m in Sources */,
 				BD26B0B91D3DD0C400AB4164 /* HomePageVC.m in Sources */,
 				BDED5DC41D54380A008FC522 /* NSObject+PerformBlock.m in Sources */,
+				BD4F87FB1D64621E00016392 /* ShowMovieViewController.m in Sources */,
 				BDABB5CE1D49DB60002E1B43 /* ShopListViewController.m in Sources */,
 				BD68F0601D485C5F000B77D7 /* PopViewController.m in Sources */,
 				BD8B23CD1D3DCF34007A8211 /* AppDelegate+SkyAppDelegate.m in Sources */,
