@@ -346,7 +346,8 @@
     [self.navigationController pushViewController:vc animated:YES];
 }
 
-
+- (void)setAvatarRoundCorner {
+}
 
 
 

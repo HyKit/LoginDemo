@@ -123,7 +123,31 @@
     }
 }
 
-
+- (void)setSelectedIndex:(NSUInteger)selectedIndex {
+    [super setSelectedIndex:selectedIndex];
+    self.selectedBtn.selected = NO;
+    
+    switch (selectedIndex) {
+        case 0:
+            self.selectedBtn = btnOne;
+            break;
+        case 1:
+            self.selectedBtn = btnTwo;
+            break;
+        case 2:
+            self.selectedBtn = btnCenter;
+            break;
+        case 3:
+            self.selectedBtn = btnFour;
+            break;
+        case 4:
+            self.selectedBtn = btnFive;
+            break;
+        default:
+            break;
+    }
+    self.selectedBtn.selected = YES;
+}
 
 
 -(void)dealloc

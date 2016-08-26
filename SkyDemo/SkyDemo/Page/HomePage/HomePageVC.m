@@ -12,10 +12,16 @@
 #import "BannerWebVC.h"
 #import "PictureLictVC.h"
 #import "PhotoAnimationVC.h"
+#import "SearchViewController.h"
+#import "DropSearchViewController.h"
+#import "MovieModel.h"
 
-@interface HomePageVC () <HBannerViewDelegate, UITableViewDelegate, UITableViewDataSource>
+
+
+@interface HomePageVC () <HBannerViewDelegate, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate>
 {
     HBannerView *_bannerView;
+    UISearchBar *_searchBar;
     
 }
 
@@ -26,17 +32,74 @@
 
 @implementation HomePageVC
 
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.automaticallyAdjustsScrollViewInsets=NO;
     self.view.backgroundColor = [UIColor whiteColor];
-    self.navigationItem.title = @"首页";
+//    self.navigationItem.title = @"首页";
     [self configUI];
     [self setApplicationBadgeNumber];
     
     [self setRightBarButtonItem];
     
+    MovieModel *model1 = [[MovieModel alloc] init];
+    model1.title = @"111";
+    MovieModel *model2 = [[MovieModel alloc] init];
+    model2.title = @"222";
+
+    MovieModel *model3 = [[MovieModel alloc] init];
+    model3.title = @"333";
+
+    
+    NSArray *a = @[model1, model2, model3];
+    NSMutableArray *b = [[NSArray arrayWithArray:a] mutableCopy];
+    
+    MovieModel *modelA;
+    MovieModel *modelB;
+    modelA = a[0];
+    modelB= b[0];
+    NSLog(@"a== %@,  b === %@", modelA.title, modelB.title);
+    
+    //    model1.title = @"444";
+    
+    MovieModel *model4 = [];
+    model4.title = @"444";
+    [b replaceObjectAtIndex:0 withObject:model4];
+    modelB= b[0];
+    
+    NSLog(@"a == %@,  b === %@", modelA.title, modelB.title);
+    
+}
+
+
+
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+//    [self setSearchView];
+}
+- (void)setSearchView {
+    if (!_searchBar) {
+        
+        
+        UIView *bgView = [[UIView alloc] initWithFrame:CGRectMake(50, 100, ScreenWidth - 100, 44)];
+        bgView.backgroundColor = [UIColor colorWithRed:0.8702 green:0.8702 blue:0.8702 alpha:1.0];
+        [self.view addSubview:bgView];
+        
+        
+        
+        _searchBar = [[UISearchBar alloc] initWithFrame:CGRectMake(50, 0, ScreenWidth - 100, 49)];
+        _searchBar.placeholder = @"input  cargo name";
+        _searchBar.delegate = self;
+        
+        
+        [self.navigationController.navigationBar addSubview:_searchBar];
+    }
+
+}
+- (BOOL)searchBarShouldBeginEditing:(UISearchBar *)searchBar {
+    [self toDropDownSearchVC];
+    return YES;
 }
 
 - (void)setApplicationBadgeNumber {
@@ -188,6 +251,21 @@
     
 }
 
+
+
+- (void)toDropDownSearchVC {
+    
+//    [_searchBar removeFromSuperview];
+    
+//    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Search" bundle:nil];
+//    DropSearchViewController *vc = [sb instantiateViewControllerWithIdentifier:@"DropSearchViewController"];
+//    vc.hidesBottomBarWhenPushed = YES;
+//    
+//    [self.navigationController pushViewController:vc animated:YES];
+//    NSLog(@"tab  ===== %@", self.tabBarController.tabBar);
+    
+    
+}
 
 
 

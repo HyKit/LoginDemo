@@ -1,18 +1,18 @@
 //
-//  APPApplicationVC.m
+//  SearchViewController.m
 //  SkyDemo
 //
-//  Created by 何亚慧 on 16/8/18.
+//  Created by 何亚慧 on 16/8/22.
 //  Copyright © 2016年 Sky. All rights reserved.
 //
 
-#import "APPApplicationVC.h"
+#import "SearchViewController.h"
 
-@interface APPApplicationVC ()
+@interface SearchViewController ()
 
 @end
 
-@implementation APPApplicationVC
+@implementation SearchViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

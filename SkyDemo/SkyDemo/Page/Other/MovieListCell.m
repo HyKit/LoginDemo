@@ -91,10 +91,6 @@
     CGFloat offset =  -offsetDig * (kHeight/1.7 - 250)/2;
     
     CGAffineTransform transY = CGAffineTransformMakeTranslation(0,offset);
-    
-    //    self.titleLabel.transform = transY;
-    //    self.littleLabel.transform = transY;
-    
     self.picture.transform = transY;
     
     return offset;
