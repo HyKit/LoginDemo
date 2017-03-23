@@ -68,6 +68,7 @@
 		BD4F87F71D645C3E00016392 /* ImageContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = BD4F87F01D645C3E00016392 /* ImageContentView.m */; };
 		BD4F87F81D645C3E00016392 /* rilegouleView.m in Sources */ = {isa = PBXBuildFile; fileRef = BD4F87F21D645C3E00016392 /* rilegouleView.m */; };
 		BD4F87FB1D64621E00016392 /* ShowMovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD4F87FA1D64621E00016392 /* ShowMovieViewController.m */; };
+		BD5247E81E83C53B00FE69E2 /* CustomButtonVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BD5247E71E83C53B00FE69E2 /* CustomButtonVC.m */; };
 		BD68F0591D485B37000B77D7 /* HyPopMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = BD68F0511D485B37000B77D7 /* HyPopMenuView.m */; };
 		BD68F05A1D485B37000B77D7 /* PopMenuButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BD68F0541D485B37000B77D7 /* PopMenuButton.m */; };
 		BD68F05B1D485B37000B77D7 /* PopMenuModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BD68F0561D485B37000B77D7 /* PopMenuModel.m */; };
@@ -221,6 +222,8 @@
 		BD4F87F21D645C3E00016392 /* rilegouleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = rilegouleView.m; sourceTree = "<group>"; };
 		BD4F87F91D64621E00016392 /* ShowMovieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowMovieViewController.h; sourceTree = "<group>"; };
 		BD4F87FA1D64621E00016392 /* ShowMovieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowMovieViewController.m; sourceTree = "<group>"; };
+		BD5247E61E83C53B00FE69E2 /* CustomButtonVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomButtonVC.h; sourceTree = "<group>"; };
+		BD5247E71E83C53B00FE69E2 /* CustomButtonVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomButtonVC.m; sourceTree = "<group>"; };
 		BD68F0501D485B37000B77D7 /* HyPopMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HyPopMenuView.h; sourceTree = "<group>"; };
 		BD68F0511D485B37000B77D7 /* HyPopMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HyPopMenuView.m; sourceTree = "<group>"; };
 		BD68F0521D485B37000B77D7 /* HyPopMenuViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HyPopMenuViewDelegate.h; sourceTree = "<group>"; };
@@ -511,6 +514,8 @@
 			children = (
 				BD26B0B71D3DD0C400AB4164 /* HomePageVC.h */,
 				BD26B0B81D3DD0C400AB4164 /* HomePageVC.m */,
+				BD5247E61E83C53B00FE69E2 /* CustomButtonVC.h */,
+				BD5247E71E83C53B00FE69E2 /* CustomButtonVC.m */,
 				BD0FC0551D6AD675008EE45D /* SearchViewController.h */,
 				BD0FC0561D6AD675008EE45D /* SearchViewController.m */,
 				BD0FC0581D6AD680008EE45D /* DropSearchViewController.h */,
@@ -1065,6 +1070,7 @@
 				BD8ED77E1D532618005A20D5 /* SkyTabBarButton.m in Sources */,
 				BD151EE81D476C6400F2DAE1 /* DWBubbleMenuButton.m in Sources */,
 				BDED5DBC1D5437C7008FC522 /* HBannerItem.m in Sources */,
+				BD5247E81E83C53B00FE69E2 /* CustomButtonVC.m in Sources */,
 				BD68F05B1D485B37000B77D7 /* PopMenuModel.m in Sources */,
 				BD151EE41D476C6400F2DAE1 /* TitleButton.m in Sources */,
 				BD8B23C81D3DCEFE007A8211 /* RootTabBarController.m in Sources */,

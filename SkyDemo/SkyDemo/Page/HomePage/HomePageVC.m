@@ -15,7 +15,7 @@
 #import "SearchViewController.h"
 #import "DropSearchViewController.h"
 #import "MovieModel.h"
-
+#import "CustomButtonVC.h"
 
 
 @interface HomePageVC () <HBannerViewDelegate, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate>
@@ -37,40 +37,46 @@
     self.automaticallyAdjustsScrollViewInsets=NO;
     self.view.backgroundColor = [UIColor whiteColor];
 //    self.navigationItem.title = @"首页";
-    [self configUI];
-    [self setApplicationBadgeNumber];
-    
+//    [self configUI];
+//    [self setApplicationBadgeNumber];
     [self setRightBarButtonItem];
     
-    MovieModel *model1 = [[MovieModel alloc] init];
-    model1.title = @"111";
-    MovieModel *model2 = [[MovieModel alloc] init];
-    model2.title = @"222";
+    [self configButton];
+    
+}
+- (void)configButton {
+    NSArray *buttonArrayName = @[@"button 高亮方法"];
+    for (NSInteger i = 0; i < buttonArrayName.count; i++) {
+        
+        UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+        button.frame = CGRectMake(10, 10 * (i + 1) + i * 40 + 80, 100, 40);
+        
+        [button setTitle:buttonArrayName[i] forState:UIControlStateNormal];
+        [button addTarget:self action:@selector(buttonClicked:) forControlEvents:UIControlEventTouchUpInside];
+        button.backgroundColor = [UIColor cyanColor];
+        [button setTag:1000 + i];
+        [self.view addSubview:button];
 
-    MovieModel *model3 = [[MovieModel alloc] init];
-    model3.title = @"333";
-
+    }
     
-    NSArray *a = @[model1, model2, model3];
-    NSMutableArray *b = [[NSArray arrayWithArray:a] mutableCopy];
-    
-    MovieModel *modelA;
-    MovieModel *modelB;
-    modelA = a[0];
-    modelB= b[0];
-    NSLog(@"a== %@,  b === %@", modelA.title, modelB.title);
-    
-    //    model1.title = @"444";
-    
-    MovieModel *model4 = [];
-    model4.title = @"444";
-    [b replaceObjectAtIndex:0 withObject:model4];
-    modelB= b[0];
-    
-    NSLog(@"a == %@,  b === %@", modelA.title, modelB.title);
+}
+- (void)buttonClicked:(UIButton *)sender {
+    NSInteger index = sender.tag - 1000;
+    switch (index) {
+        case 0:
+            [self toButtonHighlitedVC];
+            break;
+            
+        default:
+            break;
+    }
     
 }
 
+- (void)toButtonHighlitedVC {
+    CustomButtonVC *vc = [[CustomButtonVC alloc]init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
 
 
 

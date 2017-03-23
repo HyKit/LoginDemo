@@ -123,7 +123,6 @@ static CGFloat scaledValue( CGFloat v1, CGFloat min2, CGFloat max2, CGFloat min1
     return frame;
 }
 
-
 - (void)prepareRearViewForPosition:(FrontViewPosition)newPosition
 {
     if ( _rearView == nil )
@@ -137,6 +136,7 @@ static CGFloat scaledValue( CGFloat v1, CGFloat min2, CGFloat max2, CGFloat min1
     [self _layoutRearViewsForLocation:xLocation];
     [self _prepareForNewPosition:newPosition];
 }
+
 
 
 - (void)prepareRightViewForPosition:(FrontViewPosition)newPosition
