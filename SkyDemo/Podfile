@@ -1,24 +1,28 @@
 platform :ios, '8.0'
 target 'SkyDemo' do
+    
   pod 'Masonry', '~> 1.0.1'
   pod 'SDWebImage', '~> 3.8.1'
   pod 'pop', '~> 1.0.9'
 pod 'AFNetworking'
-pod 'MJRefresh'
 pod 'NJKWebViewProgress'
 pod 'UMengSocial'
 pod 'UMengAnalytics-NO-IDFA'
 pod 'MMDrawerController'
-pod 'Toast'
 pod 'SVProgressHUD'
 pod 'M80AttributedLabel'
 pod 'FMDB'
 pod 'CocoaLumberjack'
 pod 'ZipArchive'
-pod 'NIMSDK'
 pod 'PureLayout'
 pod 'YYKit'
 pod 'JVFloatLabeledTextField'
+
+pod 'MBProgressHUD', '~> 0.9.1'
+pod 'MJRefresh', '~> 2.4.10'
+pod 'Toast', '~> 3.0'
+pod 'ReactiveCocoa', '~> 2.5'
+
 
 end
 

@@ -1,1 +1,1 @@
-../../../M80AttributedLabel/M80AttributedLabel/Classes/M80AttributedLabel/M80AttributedLabelDefines.h
+../../../M80AttributedLabel/M80AttributedLabel/M80AttributedLabelDefines.h

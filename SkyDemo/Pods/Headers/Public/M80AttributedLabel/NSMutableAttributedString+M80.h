@@ -1,1 +1,1 @@
-../../../M80AttributedLabel/M80AttributedLabel/Classes/M80AttributedLabel/NSMutableAttributedString+M80.h
+../../../M80AttributedLabel/M80AttributedLabel/NSMutableAttributedString+M80.h
