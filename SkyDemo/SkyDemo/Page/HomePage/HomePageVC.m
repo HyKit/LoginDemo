@@ -16,6 +16,8 @@
 #import "DropSearchViewController.h"
 #import "MovieModel.h"
 #import "CustomButtonVC.h"
+#import "ViewController.h"
+
 
 
 @interface HomePageVC () <HBannerViewDelegate, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate>
@@ -36,16 +38,17 @@
     [super viewDidLoad];
     self.automaticallyAdjustsScrollViewInsets=NO;
     self.view.backgroundColor = [UIColor whiteColor];
-//    self.navigationItem.title = @"首页";
+    self.navigationItem.title = @"首页";
 //    [self configUI];
 //    [self setApplicationBadgeNumber];
+    
     [self setRightBarButtonItem];
     
     [self configButton];
     
 }
 - (void)configButton {
-    NSArray *buttonArrayName = @[@"button 高亮方法"];
+    NSArray *buttonArrayName = @[@"button 高亮方法", @"MVC"];
     for (NSInteger i = 0; i < buttonArrayName.count; i++) {
         
         UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -66,6 +69,9 @@
         case 0:
             [self toButtonHighlitedVC];
             break;
+        case 1:
+            [self toMVC];
+            break;
             
         default:
             break;
@@ -75,9 +81,17 @@
 
 - (void)toButtonHighlitedVC {
     CustomButtonVC *vc = [[CustomButtonVC alloc]init];
+ 
+    vc.hidesBottomBarWhenPushed = YES;
+    
     [self.navigationController pushViewController:vc animated:YES];
 }
-
+- (void)toMVC {
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    ViewController *vc = [sb instantiateViewControllerWithIdentifier:@"ViewController"];
+    vc.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:vc animated:YES];
+}
 
 
 - (void)viewDidAppear:(BOOL)animated {

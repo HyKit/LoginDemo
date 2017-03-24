@@ -88,6 +88,7 @@
     UserCenterVC *vc2 = [[UserCenterVC alloc] init];
     UINavigationController *nav2 = [[UINavigationController alloc] initWithRootViewController:vc2];
     
+    
     self.viewControllers = @[revealViewController, nav1, navPop, shopNav, nav2];
     self.selectedIndex = 1;
 //    self.selectedIndex = 3;
