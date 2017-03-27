@@ -77,19 +77,20 @@
     [revealViewController setFrontViewPosition:FrontViewPositionLeft animated:YES];
 
     HomePageVC *vc1 = [[HomePageVC alloc] init];
-    UINavigationController *nav1 = [[UINavigationController alloc] initWithRootViewController:vc1];
+//    UINavigationController *nav1 = [[UINavigationController alloc] initWithRootViewController:vc1];
     
     PopViewController * vcPop = [[PopViewController alloc] init];
-    UINavigationController *navPop = [[UINavigationController alloc] initWithRootViewController:vcPop];
+//    UINavigationController *navPop = [[UINavigationController alloc] initWithRootViewController:vcPop];
     
     ShopListViewController *shopVC = [[ShopListViewController alloc] init];
-    UINavigationController *shopNav = [[UINavigationController alloc] initWithRootViewController:shopVC];
+//    UINavigationController *shopNav = [[UINavigationController alloc] initWithRootViewController:shopVC];
     
     UserCenterVC *vc2 = [[UserCenterVC alloc] init];
-    UINavigationController *nav2 = [[UINavigationController alloc] initWithRootViewController:vc2];
+//    UINavigationController *nav2 = [[UINavigationController alloc] initWithRootViewController:vc2];
     
     
-    self.viewControllers = @[revealViewController, nav1, navPop, shopNav, nav2];
+    self.viewControllers = @[revealViewController, vc1, vcPop, shopVC, vc2];
+
     self.selectedIndex = 1;
 //    self.selectedIndex = 3;
 

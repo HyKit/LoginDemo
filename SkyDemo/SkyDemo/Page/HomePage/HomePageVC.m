@@ -15,10 +15,9 @@
 #import "SearchViewController.h"
 #import "DropSearchViewController.h"
 #import "MovieModel.h"
-#import "CustomButtonVC.h"
-#import "ViewController.h"
-
-
+#import "AppDelegate.h"
+#import "PIPViewController.h"
+#import "AddressViewController.h"
 
 @interface HomePageVC () <HBannerViewDelegate, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate>
 {
@@ -28,6 +27,8 @@
 }
 
 @property (nonatomic, strong) UITableView *tableView;
+@property (nonatomic, strong) UIImageView *imageView;
+
 
 
 @end
@@ -39,88 +40,95 @@
     self.automaticallyAdjustsScrollViewInsets=NO;
     self.view.backgroundColor = [UIColor whiteColor];
     self.navigationItem.title = @"首页";
-//    [self configUI];
-//    [self setApplicationBadgeNumber];
-    
-    [self setRightBarButtonItem];
     
     [self configButton];
+    [self.navigationController setNavigationBarHidden:YES animated:YES];
+    
+    [self setNetworkStatus];
     
 }
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self.navigationController setNavigationBarHidden:YES animated:YES];
+}
 - (void)configButton {
-    NSArray *buttonArrayName = @[@"button 高亮方法", @"MVC"];
+    NSArray *buttonArrayName = @[@"button 高亮方法", @"MVC", @"IV渲染red", @"IV渲染cyan", @"imageview美化", @"左滑删除"];
     for (NSInteger i = 0; i < buttonArrayName.count; i++) {
         
         UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-        button.frame = CGRectMake(10, 10 * (i + 1) + i * 40 + 80, 100, 40);
-        
+        button.frame = CGRectMake(10, 10 * (i + 1) + i * 40 + 60, 100, 40);
+        button.titleLabel.font = [UIFont systemFontOfSize:14.0f];
         [button setTitle:buttonArrayName[i] forState:UIControlStateNormal];
         [button addTarget:self action:@selector(buttonClicked:) forControlEvents:UIControlEventTouchUpInside];
-        button.backgroundColor = [UIColor cyanColor];
+        button.backgroundColor = HEXCOLOR(0xff8400);
         [button setTag:1000 + i];
         [self.view addSubview:button];
-
     }
+    self.imageView = [[UIImageView alloc] initWithFrame:CGRectMake(130, 160, 50, 50)];
+    _imageView.layer.borderColor = kMainColor.CGColor;
+    _imageView.layer.borderWidth = 1.0f;
+    
+    [self.view addSubview:_imageView];
     
 }
 - (void)buttonClicked:(UIButton *)sender {
     NSInteger index = sender.tag - 1000;
+    
+    AppDelegate *delegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
+    
     switch (index) {
         case 0:
-            [self toButtonHighlitedVC];
+            [delegate launchModule:@"自定义Button"];
             break;
         case 1:
-            [self toMVC];
+            [delegate launchModule:@"MVC"];
             break;
-            
+        case 2:
+            [self changeImageColor:[UIColor redColor]];
+            break;
+        case 3:
+            [self changeImageColor:[UIColor cyanColor]];
+            break;
+        case 4:
+            [self toPIP];
+            break;
+        case 5: //左滑删除
+            [self toDeleteAnimation];
+            break;
         default:
             break;
     }
     
 }
 
-- (void)toButtonHighlitedVC {
-    CustomButtonVC *vc = [[CustomButtonVC alloc]init];
- 
-    vc.hidesBottomBarWhenPushed = YES;
-    
-    [self.navigationController pushViewController:vc animated:YES];
-}
-- (void)toMVC {
-    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    ViewController *vc = [sb instantiateViewControllerWithIdentifier:@"ViewController"];
-    vc.hidesBottomBarWhenPushed = YES;
-    [self.navigationController pushViewController:vc animated:YES];
-}
-
-
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
 //    [self setSearchView];
 }
-- (void)setSearchView {
-    if (!_searchBar) {
-        
-        
-        UIView *bgView = [[UIView alloc] initWithFrame:CGRectMake(50, 100, ScreenWidth - 100, 44)];
-        bgView.backgroundColor = [UIColor colorWithRed:0.8702 green:0.8702 blue:0.8702 alpha:1.0];
-        [self.view addSubview:bgView];
-        
-        
-        
-        _searchBar = [[UISearchBar alloc] initWithFrame:CGRectMake(50, 0, ScreenWidth - 100, 49)];
-        _searchBar.placeholder = @"input  cargo name";
-        _searchBar.delegate = self;
-        
-        
-        [self.navigationController.navigationBar addSubview:_searchBar];
-    }
-
-}
-- (BOOL)searchBarShouldBeginEditing:(UISearchBar *)searchBar {
-    [self toDropDownSearchVC];
-    return YES;
-}
+//- (void)setSearchView {
+//    if (!_searchBar) {
+//        
+//        
+//        UIView *bgView = [[UIView alloc] initWithFrame:CGRectMake(50, 100, ScreenWidth - 100, 44)];
+//        bgView.backgroundColor = [UIColor colorWithRed:0.8702 green:0.8702 blue:0.8702 alpha:1.0];
+//        [self.view addSubview:bgView];
+//        
+//        
+//        
+//        _searchBar = [[UISearchBar alloc] initWithFrame:CGRectMake(50, 0, ScreenWidth - 100, 49)];
+//        _searchBar.placeholder = @"input  cargo name";
+//        _searchBar.delegate = self;
+//        
+//        
+//        [self.navigationController.navigationBar addSubview:_searchBar];
+//    }
+//
+//}
+//- (BOOL)searchBarShouldBeginEditing:(UISearchBar *)searchBar {
+//    [self toDropDownSearchVC];
+//    return YES;
+//}
 
 - (void)setApplicationBadgeNumber {
     /**
@@ -136,9 +144,7 @@
     [app registerUserNotificationSettings:setting];
 }
 
-- (void)setRightBarButtonItem {
-    
-}
+
 
 
 - (void)configUI {
@@ -181,43 +187,6 @@
     [self.view addSubview:photoButton];
     
 }
-
-
-- (void)focusBannerView:(HBannerView *)banberView didSelectItem:(HBannerItem *)item {
-    if (item.tag % 2) {
-        [self toWebView:@{
-                          @"title":@"网页",
-                          @"urlString":@"http://www.cocoachina.com",
-                          }];
-    }
-    else {
-        [self toPictureListVC];
-    }
-    
-}
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 1;
-}
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 10;
-}
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
-    if (!cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
-        cell.textLabel.text = @"111";
-    }
-    return cell;
-}
-
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-}
-
-
-
-
 
 
 
@@ -288,6 +257,31 @@
 }
 
 
+//在我们使用应用的时候，每当有网络请求产生时，我们总是可以在状态栏看到一个转动的网络请求标志。这个标志并不是在网络请求发生的时候自动出现的，需要在代码中手动启动和关闭。
+- (void)setNetworkStatus {
+    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];// 启动状态栏网络请求指示
+//    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];// 关闭状态来网络请求指示
+
+}
+
+//用代码改变image的渲染颜色。
+- (void)changeImageColor:(UIColor *)color {
+    
+    UIImage *theImage = [[UIImage imageNamed:@"CenterBtn"] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
+    self.imageView.image = theImage;
+    [self.imageView setTintColor:color];
+}
+
+- (void)toPIP {
+    
+    PIPViewController *vc = [[PIPViewController alloc] initWithNibName:@"PIPViewController" bundle:nil];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (void)toDeleteAnimation {
+    AddressViewController *vc = [[AddressViewController alloc] initWithNibName:@"AddressViewController" bundle:nil];
+    [self.navigationController pushViewController:vc animated:YES];
+}
 
 
 @end

@@ -7,9 +7,13 @@
 //
 
 #import "AppDelegate.h"
+#import "AppDelegateHeader.h"
 
 @interface AppDelegate ()
+{
+    UINavigationController *nav;
 
+}
 @end
 
 @implementation AppDelegate
@@ -17,24 +21,46 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-  
-    [self setNavigationBar];
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    [self.window makeKeyAndVisible];
+
     [self setAppStatusBar];
+    [self setNavigationBar];
     
     return YES;
 }
 - (void)setNavigationBar {
-
+    
+    RootTabBarController *home=[[RootTabBarController alloc] init];
+    
+    nav=[[UINavigationController alloc]initWithRootViewController:home];
+    //    [[UILabel appearance] setFont:kNormalFont];
     [[UINavigationBar appearance] setBarStyle:UIBarStyleDefault];
-    [[UINavigationBar appearance] setBarTintColor:[UIColor cyanColor]];
+    [[UINavigationBar appearance] setBarTintColor:HEXCOLOR(0xff8400)];
     [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
     
-
+    [[UINavigationBar appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor],NSForegroundColorAttributeName,[UIFont systemFontOfSize:18.0],NSFontAttributeName, nil]];
+    if ([nav.navigationBar respondsToSelector:@selector(setBackgroundImage:forBarMetrics:)]) {
+        NSArray *listArr = nav.navigationBar.subviews;
+        for (id obj in listArr) {
+            if ([obj isKindOfClass:[UIImageView class]]) {
+                UIImageView *imageView = (UIImageView *)obj;
+                NSArray *subListArr = imageView.subviews;
+                for (id subObj in subListArr) {
+                    if ([subObj isKindOfClass:[UIImageView class]]) {
+                        UIImageView *barLine = (UIImageView *)subObj;
+                        barLine.hidden = YES;
+                    }
+                }
+                
+            }
+        }
+    }
+    nav.navigationBarHidden=YES;
     
-//    
-//    [[UINavigationBar appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor],NSForegroundColorAttributeName,[UIFont systemFontOfSize:20.0],NSFontAttributeName, nil]];
-//    if ([nav.navigationBar respondsToSelector:@selector(setBackgroundImage:forBarMetrics:)]) {
-// 
+    [self.window setRootViewController:nav];
+    
+    [self.window setBackgroundColor:[UIColor whiteColor]];
     
     
 }
@@ -92,5 +118,28 @@
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+
+
+- (void)launchModule:(NSString *)module {
+    
+    if ([module isEqualToString:@"自定义Button"]) {
+        CustomButtonVC *vc = [[CustomButtonVC alloc] init];
+        [nav pushViewController:vc animated:YES];
+        return;
+    }
+    else if ([module isEqualToString:@"MVC"]) {
+        UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        ViewController *vc = [sb instantiateViewControllerWithIdentifier:@"ViewController"];
+        [nav pushViewController:vc animated:YES];
+        return;
+    }
+    
+    else {
+        [OMGToast showWithText:@"module错误，无此类别"];
+        return;
+    }
+}
+
+
 
 @end

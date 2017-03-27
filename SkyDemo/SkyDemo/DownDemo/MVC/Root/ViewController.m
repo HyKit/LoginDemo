@@ -22,7 +22,10 @@
     [super viewDidLoad];
 
 }
-
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self.navigationController setNavigationBarHidden:NO animated:YES];
+}
 - (IBAction)MVC:(UIButton *)sender {
     [self.navigationController pushViewController:[UserViewController instanceWithUserId:sender.tag] animated:YES];
 }

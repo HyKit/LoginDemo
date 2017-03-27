@@ -121,6 +121,25 @@
 		BD68F05B1D485B37000B77D7 /* PopMenuModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BD68F0561D485B37000B77D7 /* PopMenuModel.m */; };
 		BD68F05C1D485B37000B77D7 /* UIColor+ImageGetColor.m in Sources */ = {isa = PBXBuildFile; fileRef = BD68F0581D485B37000B77D7 /* UIColor+ImageGetColor.m */; };
 		BD68F0601D485C5F000B77D7 /* PopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD68F05F1D485C5F000B77D7 /* PopViewController.m */; };
+		BD7DA7F71E88A52D00450913 /* UIImage+Extra.m in Sources */ = {isa = PBXBuildFile; fileRef = BD7DA7F61E88A52D00450913 /* UIImage+Extra.m */; };
+		BD7DA7FB1E88A64400450913 /* PIPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD7DA7F91E88A64400450913 /* PIPViewController.m */; };
+		BD7DA7FC1E88A64400450913 /* PIPViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD7DA7FA1E88A64400450913 /* PIPViewController.xib */; };
+		BD7DA8001E88B3C300450913 /* AddressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD7DA7FF1E88B3C300450913 /* AddressViewController.m */; };
+		BD7DA81B1E88B8C200450913 /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BD7DA8051E88B8C200450913 /* background.jpg */; };
+		BD7DA81C1E88B8C200450913 /* cat@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BD7DA8061E88B8C200450913 /* cat@2x.png */; };
+		BD7DA81D1E88B8C200450913 /* check@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BD7DA8071E88B8C200450913 /* check@2x.png */; };
+		BD7DA81E1E88B8C200450913 /* fav@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BD7DA8081E88B8C200450913 /* fav@2x.png */; };
+		BD7DA81F1E88B8C200450913 /* menu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BD7DA8091E88B8C200450913 /* menu@2x.png */; };
+		BD7DA8201E88B8C200450913 /* autolayout_test.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD7DA80A1E88B8C200450913 /* autolayout_test.storyboard */; };
+		BD7DA8211E88B8C200450913 /* DemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD7DA80C1E88B8C200450913 /* DemoViewController.m */; };
+		BD7DA8221E88B8C200450913 /* MGSwipeDemo-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BD7DA80D1E88B8C200450913 /* MGSwipeDemo-Info.plist */; };
+		BD7DA8231E88B8C200450913 /* TestData.m in Sources */ = {isa = PBXBuildFile; fileRef = BD7DA8101E88B8C200450913 /* TestData.m */; };
+		BD7DA8241E88B8C200450913 /* more@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BD7DA8121E88B8C200450913 /* more@2x.png */; };
+		BD7DA8251E88B8C200450913 /* SpotifyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD7DA8141E88B8C200450913 /* SpotifyViewController.m */; };
+		BD7DA8261E88B8C200450913 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BD7DA8161E88B8C200450913 /* Info.plist */; };
+		BD7DA8271E88B8C200450913 /* MGSwipeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BD7DA8181E88B8C200450913 /* MGSwipeButton.m */; };
+		BD7DA8281E88B8C200450913 /* MGSwipeTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BD7DA81A1E88B8C200450913 /* MGSwipeTableCell.m */; };
+		BD7DA82A1E88B91700450913 /* AddressViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD7DA8291E88B91700450913 /* AddressViewController.xib */; };
 		BD8786941D6D2DA80097AE80 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = BD87868F1D6D2DA80097AE80 /* 1.png */; };
 		BD8786951D6D2DA80097AE80 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = BD8786901D6D2DA80097AE80 /* 2.png */; };
 		BD8786961D6D2DA80097AE80 /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = BD8786911D6D2DA80097AE80 /* 3.png */; };
@@ -129,9 +148,10 @@
 		BD8B23C81D3DCEFE007A8211 /* RootTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD8B23C31D3DCEFE007A8211 /* RootTabBarController.m */; };
 		BD8B23C91D3DCEFE007A8211 /* RootTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD8B23C51D3DCEFE007A8211 /* RootTableViewController.m */; };
 		BD8B23CA1D3DCEFE007A8211 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD8B23C71D3DCEFE007A8211 /* RootViewController.m */; };
-		BD8B23CD1D3DCF34007A8211 /* AppDelegate+SkyAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BD8B23CC1D3DCF34007A8211 /* AppDelegate+SkyAppDelegate.m */; };
 		BD8ED77B1D532562005A20D5 /* SkyTabBarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BD8ED77A1D532562005A20D5 /* SkyTabBarVC.m */; };
 		BD8ED77E1D532618005A20D5 /* SkyTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BD8ED77D1D532618005A20D5 /* SkyTabBarButton.m */; };
+		BD98FE5A1E84F16E0093A297 /* UILabel+CustomLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = BD98FE591E84F16E0093A297 /* UILabel+CustomLabel.m */; };
+		BD98FE5D1E84F98B0093A297 /* UIButton+CustomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BD98FE5C1E84F98B0093A297 /* UIButton+CustomButton.m */; };
 		BD9E252D1D3DB467006C9FD5 /* SkyDemo.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = BD9E252C1D3DB467006C9FD5 /* SkyDemo.entitlements */; };
 		BDABB5CE1D49DB60002E1B43 /* ShopListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDABB5CD1D49DB60002E1B43 /* ShopListViewController.m */; };
 		BDAE49721D3CBA6F00689048 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BDAE49711D3CBA6F00689048 /* main.m */; };
@@ -365,6 +385,34 @@
 		BD68F0581D485B37000B77D7 /* UIColor+ImageGetColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ImageGetColor.m"; sourceTree = "<group>"; };
 		BD68F05E1D485C5F000B77D7 /* PopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopViewController.h; sourceTree = "<group>"; };
 		BD68F05F1D485C5F000B77D7 /* PopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopViewController.m; sourceTree = "<group>"; };
+		BD7DA7F51E88A52D00450913 /* UIImage+Extra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extra.h"; sourceTree = "<group>"; };
+		BD7DA7F61E88A52D00450913 /* UIImage+Extra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extra.m"; sourceTree = "<group>"; };
+		BD7DA7F81E88A64400450913 /* PIPViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PIPViewController.h; sourceTree = "<group>"; };
+		BD7DA7F91E88A64400450913 /* PIPViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PIPViewController.m; sourceTree = "<group>"; };
+		BD7DA7FA1E88A64400450913 /* PIPViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PIPViewController.xib; sourceTree = "<group>"; };
+		BD7DA7FE1E88B3C300450913 /* AddressViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressViewController.h; sourceTree = "<group>"; };
+		BD7DA7FF1E88B3C300450913 /* AddressViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressViewController.m; sourceTree = "<group>"; };
+		BD7DA8051E88B8C200450913 /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = "<group>"; };
+		BD7DA8061E88B8C200450913 /* cat@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cat@2x.png"; sourceTree = "<group>"; };
+		BD7DA8071E88B8C200450913 /* check@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "check@2x.png"; sourceTree = "<group>"; };
+		BD7DA8081E88B8C200450913 /* fav@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fav@2x.png"; sourceTree = "<group>"; };
+		BD7DA8091E88B8C200450913 /* menu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu@2x.png"; sourceTree = "<group>"; };
+		BD7DA80A1E88B8C200450913 /* autolayout_test.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = autolayout_test.storyboard; sourceTree = "<group>"; };
+		BD7DA80B1E88B8C200450913 /* DemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoViewController.h; sourceTree = "<group>"; };
+		BD7DA80C1E88B8C200450913 /* DemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoViewController.m; sourceTree = "<group>"; };
+		BD7DA80D1E88B8C200450913 /* MGSwipeDemo-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "MGSwipeDemo-Info.plist"; sourceTree = "<group>"; };
+		BD7DA80E1E88B8C200450913 /* MGSwipeDemo-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MGSwipeDemo-Prefix.pch"; sourceTree = "<group>"; };
+		BD7DA80F1E88B8C200450913 /* TestData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestData.h; sourceTree = "<group>"; };
+		BD7DA8101E88B8C200450913 /* TestData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestData.m; sourceTree = "<group>"; };
+		BD7DA8121E88B8C200450913 /* more@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "more@2x.png"; sourceTree = "<group>"; };
+		BD7DA8131E88B8C200450913 /* SpotifyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpotifyViewController.h; sourceTree = "<group>"; };
+		BD7DA8141E88B8C200450913 /* SpotifyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpotifyViewController.m; sourceTree = "<group>"; };
+		BD7DA8161E88B8C200450913 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD7DA8171E88B8C200450913 /* MGSwipeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGSwipeButton.h; sourceTree = "<group>"; };
+		BD7DA8181E88B8C200450913 /* MGSwipeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGSwipeButton.m; sourceTree = "<group>"; };
+		BD7DA8191E88B8C200450913 /* MGSwipeTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGSwipeTableCell.h; sourceTree = "<group>"; };
+		BD7DA81A1E88B8C200450913 /* MGSwipeTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGSwipeTableCell.m; sourceTree = "<group>"; };
+		BD7DA8291E88B91700450913 /* AddressViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddressViewController.xib; sourceTree = "<group>"; };
 		BD87868F1D6D2DA80097AE80 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
 		BD8786901D6D2DA80097AE80 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
 		BD8786911D6D2DA80097AE80 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
@@ -378,12 +426,15 @@
 		BD8B23C51D3DCEFE007A8211 /* RootTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootTableViewController.m; sourceTree = "<group>"; };
 		BD8B23C61D3DCEFE007A8211 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		BD8B23C71D3DCEFE007A8211 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
-		BD8B23CB1D3DCF34007A8211 /* AppDelegate+SkyAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+SkyAppDelegate.h"; sourceTree = "<group>"; };
-		BD8B23CC1D3DCF34007A8211 /* AppDelegate+SkyAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+SkyAppDelegate.m"; sourceTree = "<group>"; };
 		BD8ED7791D532562005A20D5 /* SkyTabBarVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SkyTabBarVC.h; sourceTree = "<group>"; };
 		BD8ED77A1D532562005A20D5 /* SkyTabBarVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SkyTabBarVC.m; sourceTree = "<group>"; };
 		BD8ED77C1D532618005A20D5 /* SkyTabBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SkyTabBarButton.h; sourceTree = "<group>"; };
 		BD8ED77D1D532618005A20D5 /* SkyTabBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SkyTabBarButton.m; sourceTree = "<group>"; };
+		BD98FE561E84E4A80093A297 /* AppDelegateHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegateHeader.h; sourceTree = "<group>"; };
+		BD98FE581E84F16E0093A297 /* UILabel+CustomLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+CustomLabel.h"; sourceTree = "<group>"; };
+		BD98FE591E84F16E0093A297 /* UILabel+CustomLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+CustomLabel.m"; sourceTree = "<group>"; };
+		BD98FE5B1E84F98B0093A297 /* UIButton+CustomButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+CustomButton.h"; sourceTree = "<group>"; };
+		BD98FE5C1E84F98B0093A297 /* UIButton+CustomButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+CustomButton.m"; sourceTree = "<group>"; };
 		BD9E252C1D3DB467006C9FD5 /* SkyDemo.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = SkyDemo.entitlements; sourceTree = "<group>"; };
 		BDABB5CC1D49DB60002E1B43 /* ShopListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopListViewController.h; sourceTree = "<group>"; };
 		BDABB5CD1D49DB60002E1B43 /* ShopListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopListViewController.m; sourceTree = "<group>"; };
@@ -646,10 +697,16 @@
 				BD26B0B81D3DD0C400AB4164 /* HomePageVC.m */,
 				BD5247E61E83C53B00FE69E2 /* CustomButtonVC.h */,
 				BD5247E71E83C53B00FE69E2 /* CustomButtonVC.m */,
+				BD7DA7F51E88A52D00450913 /* UIImage+Extra.h */,
+				BD7DA7F61E88A52D00450913 /* UIImage+Extra.m */,
+				BD7DA7F81E88A64400450913 /* PIPViewController.h */,
+				BD7DA7F91E88A64400450913 /* PIPViewController.m */,
+				BD7DA7FA1E88A64400450913 /* PIPViewController.xib */,
 				BD0FC0551D6AD675008EE45D /* SearchViewController.h */,
 				BD0FC0561D6AD675008EE45D /* SearchViewController.m */,
 				BD0FC0581D6AD680008EE45D /* DropSearchViewController.h */,
 				BD0FC0591D6AD680008EE45D /* DropSearchViewController.m */,
+				BD7DA7FD1E88B3AA00450913 /* EditCell */,
 				BD0FC05B1D6AD6A4008EE45D /* Search.storyboard */,
 			);
 			path = HomePage;
@@ -973,6 +1030,76 @@
 			path = TabBar;
 			sourceTree = "<group>";
 		};
+		BD7DA7FD1E88B3AA00450913 /* EditCell */ = {
+			isa = PBXGroup;
+			children = (
+				BD7DA7FE1E88B3C300450913 /* AddressViewController.h */,
+				BD7DA7FF1E88B3C300450913 /* AddressViewController.m */,
+				BD7DA8291E88B91700450913 /* AddressViewController.xib */,
+				BD7DA8021E88B8C200450913 /* MailDemo */,
+				BD7DA8031E88B8C200450913 /* MGSwipeDemo */,
+				BD7DA8111E88B8C200450913 /* SpotifyDemo */,
+				BD7DA8151E88B8C200450913 /* MGSwipeTableCell */,
+			);
+			path = EditCell;
+			sourceTree = "<group>";
+		};
+		BD7DA8021E88B8C200450913 /* MailDemo */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MailDemo;
+			sourceTree = "<group>";
+		};
+		BD7DA8031E88B8C200450913 /* MGSwipeDemo */ = {
+			isa = PBXGroup;
+			children = (
+				BD7DA8041E88B8C200450913 /* assets */,
+				BD7DA80A1E88B8C200450913 /* autolayout_test.storyboard */,
+				BD7DA80B1E88B8C200450913 /* DemoViewController.h */,
+				BD7DA80C1E88B8C200450913 /* DemoViewController.m */,
+				BD7DA80D1E88B8C200450913 /* MGSwipeDemo-Info.plist */,
+				BD7DA80E1E88B8C200450913 /* MGSwipeDemo-Prefix.pch */,
+				BD7DA80F1E88B8C200450913 /* TestData.h */,
+				BD7DA8101E88B8C200450913 /* TestData.m */,
+			);
+			path = MGSwipeDemo;
+			sourceTree = "<group>";
+		};
+		BD7DA8041E88B8C200450913 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				BD7DA8051E88B8C200450913 /* background.jpg */,
+				BD7DA8061E88B8C200450913 /* cat@2x.png */,
+				BD7DA8071E88B8C200450913 /* check@2x.png */,
+				BD7DA8081E88B8C200450913 /* fav@2x.png */,
+				BD7DA8091E88B8C200450913 /* menu@2x.png */,
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
+		BD7DA8111E88B8C200450913 /* SpotifyDemo */ = {
+			isa = PBXGroup;
+			children = (
+				BD7DA8121E88B8C200450913 /* more@2x.png */,
+				BD7DA8131E88B8C200450913 /* SpotifyViewController.h */,
+				BD7DA8141E88B8C200450913 /* SpotifyViewController.m */,
+			);
+			path = SpotifyDemo;
+			sourceTree = "<group>";
+		};
+		BD7DA8151E88B8C200450913 /* MGSwipeTableCell */ = {
+			isa = PBXGroup;
+			children = (
+				BD7DA8161E88B8C200450913 /* Info.plist */,
+				BD7DA8171E88B8C200450913 /* MGSwipeButton.h */,
+				BD7DA8181E88B8C200450913 /* MGSwipeButton.m */,
+				BD7DA8191E88B8C200450913 /* MGSwipeTableCell.h */,
+				BD7DA81A1E88B8C200450913 /* MGSwipeTableCell.m */,
+			);
+			path = MGSwipeTableCell;
+			sourceTree = "<group>";
+		};
 		BD87868E1D6D2DA80097AE80 /* photo */ = {
 			isa = PBXGroup;
 			children = (
@@ -1003,11 +1130,11 @@
 		BD8B23BB1D3DC13B007A8211 /* Page */ = {
 			isa = PBXGroup;
 			children = (
+				BD26B0B21D3DD09A00AB4164 /* HomePage */,
 				BDABB5CB1D49DB2D002E1B43 /* Other */,
 				BD68F05D1D485C48000B77D7 /* PopView */,
 				BDC157411D45AFF2003FBBC0 /* Points */,
 				BD4C930F1D41BD6800AD1359 /* BannerVC */,
-				BD26B0B21D3DD09A00AB4164 /* HomePage */,
 				BD26B0B31D3DD09A00AB4164 /* UserCenter */,
 			);
 			path = Page;
@@ -1034,6 +1161,7 @@
 		BD8B23BE1D3DC13B007A8211 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				BD98FE571E84F15A0093A297 /* Category */,
 				BD8B23BF1D3DC13B007A8211 /* PrefixHeader.pch */,
 				BD8B23C01D3DC13B007A8211 /* PreHeader.h */,
 			);
@@ -1056,6 +1184,17 @@
 				BD26B0BE1D3DD21B00AB4164 /* RootNavigationBar.m */,
 			);
 			path = Root;
+			sourceTree = "<group>";
+		};
+		BD98FE571E84F15A0093A297 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				BD98FE581E84F16E0093A297 /* UILabel+CustomLabel.h */,
+				BD98FE591E84F16E0093A297 /* UILabel+CustomLabel.m */,
+				BD98FE5B1E84F98B0093A297 /* UIButton+CustomButton.h */,
+				BD98FE5C1E84F98B0093A297 /* UIButton+CustomButton.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 		BDABB5CB1D49DB2D002E1B43 /* Other */ = {
@@ -1101,8 +1240,7 @@
 			children = (
 				BDAE49731D3CBA6F00689048 /* AppDelegate.h */,
 				BDAE49741D3CBA6F00689048 /* AppDelegate.m */,
-				BD8B23CB1D3DCF34007A8211 /* AppDelegate+SkyAppDelegate.h */,
-				BD8B23CC1D3DCF34007A8211 /* AppDelegate+SkyAppDelegate.m */,
+				BD98FE561E84E4A80093A297 /* AppDelegateHeader.h */,
 				BDAE49791D3CBA6F00689048 /* Main.storyboard */,
 				BD9E252C1D3DB467006C9FD5 /* SkyDemo.entitlements */,
 				BD5247E91E84B61300FE69E2 /* DownDemo */,
@@ -1308,24 +1446,30 @@
 				BD52486D1E84B61300FE69E2 /* BlogCell.xib in Resources */,
 				BD151F011D476C6400F2DAE1 /* fold.caf in Resources */,
 				BD5248751E84B61300FE69E2 /* icon0@2x.png in Resources */,
+				BD7DA8221E88B8C200450913 /* MGSwipeDemo-Info.plist in Resources */,
 				BD5248561E84B61300FE69E2 /* UserInfoViewController.xib in Resources */,
 				BD151EEB1D476C6400F2DAE1 /* chooser-button-tab-highlighted@2x.png in Resources */,
 				BDC15D451D4730DE003FBBC0 /* avatar.png in Resources */,
 				BD151EF21D476C6400F2DAE1 /* chooser-moment-icon-music@2x.png in Resources */,
 				BD8786981D6D2DA80097AE80 /* 5.png in Resources */,
+				BD7DA82A1E88B91700450913 /* AddressViewController.xib in Resources */,
 				BD5248791E84B61300FE69E2 /* like@2x.png in Resources */,
 				BD151EEF1D476C6400F2DAE1 /* chooser-moment-icon-camera-highlighted@2x.png in Resources */,
 				BD151EF51D476C6400F2DAE1 /* chooser-moment-icon-sleep-highlighted@2x.png in Resources */,
 				BD151EF11D476C6400F2DAE1 /* chooser-moment-icon-music-highlighted@2x.png in Resources */,
 				BD5248681E84B61300FE69E2 /* BlogViewCell.xib in Resources */,
 				BD151EF61D476C6400F2DAE1 /* chooser-moment-icon-sleep@2x.png in Resources */,
+				BD7DA81C1E88B8C200450913 /* cat@2x.png in Resources */,
 				BD8786951D6D2DA80097AE80 /* 2.png in Resources */,
+				BD7DA81E1E88B8C200450913 /* fav@2x.png in Resources */,
+				BD7DA8241E88B8C200450913 /* more@2x.png in Resources */,
 				BD151EFB1D476C6400F2DAE1 /* Sparkle.png in Resources */,
 				BD8786941D6D2DA80097AE80 /* 1.png in Resources */,
 				BD8786961D6D2DA80097AE80 /* 3.png in Resources */,
 				BD151EEA1D476C6400F2DAE1 /* chooser-button-input@2x.png in Resources */,
 				BD151EF01D476C6400F2DAE1 /* chooser-moment-icon-camera@2x.png in Resources */,
 				BD5248771E84B61300FE69E2 /* icon1@2x.png in Resources */,
+				BD7DA8201E88B8C200450913 /* autolayout_test.storyboard in Resources */,
 				BD52487A1E84B61300FE69E2 /* like@3x.png in Resources */,
 				BD151EF31D476C6400F2DAE1 /* chooser-moment-icon-place-highlighted@2x.png in Resources */,
 				BDC15D431D470285003FBBC0 /* bg.png in Resources */,
@@ -1341,13 +1485,18 @@
 				BD52485F1E84B61300FE69E2 /* DraftTableViewCell.xib in Resources */,
 				BD9E252D1D3DB467006C9FD5 /* SkyDemo.entitlements in Resources */,
 				BDAE497B1D3CBA6F00689048 /* Main.storyboard in Resources */,
+				BD7DA7FC1E88A64400450913 /* PIPViewController.xib in Resources */,
 				BD0FC05C1D6AD6A4008EE45D /* Search.storyboard in Resources */,
+				BD7DA81F1E88B8C200450913 /* menu@2x.png in Resources */,
 				BD52485D1E84B61300FE69E2 /* BlogTableViewCell.xib in Resources */,
 				BD151EEC1D476C6400F2DAE1 /* chooser-button-tab@2x.png in Resources */,
 				BD151EED1D476C6400F2DAE1 /* chooser-moment-button-highlighted@2x.png in Resources */,
+				BD7DA8261E88B8C200450913 /* Info.plist in Resources */,
 				BD5248761E84B61300FE69E2 /* icon0@3x.png in Resources */,
 				BD151EF91D476C6400F2DAE1 /* Like-Blue@2x.png in Resources */,
+				BD7DA81D1E88B8C200450913 /* check@2x.png in Resources */,
 				BD151EFA1D476C6400F2DAE1 /* Like@2x.png in Resources */,
+				BD7DA81B1E88B8C200450913 /* background.jpg in Resources */,
 				BD151EE91D476C6400F2DAE1 /* chooser-button-input-highlighted@2x.png in Resources */,
 				BD151EF81D476C6400F2DAE1 /* chooser-moment-icon-thought@2x.png in Resources */,
 			);
@@ -1429,6 +1578,7 @@
 				BD151EE21D476C6400F2DAE1 /* KeyFrameAnimationController.m in Sources */,
 				BD68F05A1D485B37000B77D7 /* PopMenuButton.m in Sources */,
 				BD52486F1E84B61300FE69E2 /* BlogCellViewModel.m in Sources */,
+				BD7DA7FB1E88A64400450913 /* PIPViewController.m in Sources */,
 				BD5248621E84B61300FE69E2 /* BlogCellPresenter.m in Sources */,
 				BD0FC0571D6AD675008EE45D /* SearchViewController.m in Sources */,
 				BDFCE98A1D6D83340016107B /* UIImageView+Extra.m in Sources */,
@@ -1440,8 +1590,11 @@
 				BD5248671E84B61300FE69E2 /* BlogViewCell.m in Sources */,
 				BD4F87F81D645C3E00016392 /* rilegouleView.m in Sources */,
 				BD52486E1E84B61300FE69E2 /* BlogView.m in Sources */,
+				BD7DA8231E88B8C200450913 /* TestData.m in Sources */,
+				BD7DA7F71E88A52D00450913 /* UIImage+Extra.m in Sources */,
 				BD151EE61D476C6400F2DAE1 /* DCPathCenterButton.m in Sources */,
 				BD4F87F41D645C3E00016392 /* ContentScrollView.m in Sources */,
+				BD98FE5A1E84F16E0093A297 /* UILabel+CustomLabel.m in Sources */,
 				BD5248691E84B61300FE69E2 /* DraftViewCell.m in Sources */,
 				BD52487E1E84B61300FE69E2 /* UIView+Controller.m in Sources */,
 				BD4C93121D41BD9000AD1359 /* BannerWebVC.m in Sources */,
@@ -1460,11 +1613,13 @@
 				BDED5DBC1D5437C7008FC522 /* HBannerItem.m in Sources */,
 				BD5247E81E83C53B00FE69E2 /* CustomButtonVC.m in Sources */,
 				BD52486C1E84B61300FE69E2 /* BlogCell.m in Sources */,
+				BD7DA8271E88B8C200450913 /* MGSwipeButton.m in Sources */,
 				BD68F05B1D485B37000B77D7 /* PopMenuModel.m in Sources */,
 				BD5248501E84B61300FE69E2 /* UserAPIManager.m in Sources */,
 				BD151EE41D476C6400F2DAE1 /* TitleButton.m in Sources */,
 				BD8B23C81D3DCEFE007A8211 /* RootTabBarController.m in Sources */,
 				BD5248601E84B61300FE69E2 /* BlogViewController.m in Sources */,
+				BD7DA8211E88B8C200450913 /* DemoViewController.m in Sources */,
 				BD5248521E84B61300FE69E2 /* BlogTableViewController.m in Sources */,
 				BD52485E1E84B61300FE69E2 /* DraftTableViewCell.m in Sources */,
 				BDAE49751D3CBA6F00689048 /* AppDelegate.m in Sources */,
@@ -1479,6 +1634,7 @@
 				BD5248701E84B61300FE69E2 /* BlogViewModel.m in Sources */,
 				BD5248721E84B61300FE69E2 /* SceneX.m in Sources */,
 				BD4F87F71D645C3E00016392 /* ImageContentView.m in Sources */,
+				BD98FE5D1E84F98B0093A297 /* UIButton+CustomButton.m in Sources */,
 				BD4F87E21D64475200016392 /* MovieModel.m in Sources */,
 				BD8ED77B1D532562005A20D5 /* SkyTabBarVC.m in Sources */,
 				BD151EE51D476C6400F2DAE1 /* DCPathButton.m in Sources */,
@@ -1503,10 +1659,13 @@
 				BD5248541E84B61300FE69E2 /* DraftTableViewController.m in Sources */,
 				BDED5DC31D54380A008FC522 /* NSObject+NewBeeNotification.m in Sources */,
 				BDAE49721D3CBA6F00689048 /* main.m in Sources */,
+				BD7DA8251E88B8C200450913 /* SpotifyViewController.m in Sources */,
 				BD26B0BF1D3DD21B00AB4164 /* RootNavigationBar.m in Sources */,
 				BDED5DBD1D5437C7008FC522 /* HBannerView.m in Sources */,
+				BD7DA8001E88B3C300450913 /* AddressViewController.m in Sources */,
 				BD5248731E84B61300FE69E2 /* SceneY.m in Sources */,
 				BD5248551E84B61300FE69E2 /* UserInfoViewController.m in Sources */,
+				BD7DA8281E88B8C200450913 /* MGSwipeTableCell.m in Sources */,
 				BDC157441D45B007003FBBC0 /* PointsViewController.m in Sources */,
 				BD26B0B91D3DD0C400AB4164 /* HomePageVC.m in Sources */,
 				BD5248611E84B61300FE69E2 /* DraftViewController.m in Sources */,
@@ -1516,7 +1675,6 @@
 				BD5248641E84B61300FE69E2 /* DraftCellPresenter.m in Sources */,
 				BD68F0601D485C5F000B77D7 /* PopViewController.m in Sources */,
 				BD52485A1E84B61300FE69E2 /* SelfViewController.m in Sources */,
-				BD8B23CD1D3DCF34007A8211 /* AppDelegate+SkyAppDelegate.m in Sources */,
 				BD151EDD1D476C6400F2DAE1 /* AffineTransformController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

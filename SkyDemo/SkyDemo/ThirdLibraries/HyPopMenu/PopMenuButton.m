@@ -8,6 +8,8 @@
 
 #import "PopMenuButton.h"
 #import "UIColor+ImageGetColor.h"
+
+
 @implementation PopMenuButton
 
 static NSString* animationKey = @"transform.scale";
@@ -63,7 +65,9 @@ static NSString* animationKey = @"transform.scale";
 {
     CABasicAnimation* theAnimation;
     theAnimation = [CABasicAnimation animationWithKeyPath:animationKey];
-    theAnimation.delegate = self;
+//    theAnimation.delegate = self;
+    theAnimation.delegate = [YYWeakProxy proxyWithTarget:self];
+
     theAnimation.duration = 0.1;
     theAnimation.repeatCount = 0;
     theAnimation.removedOnCompletion = FALSE;
@@ -78,7 +82,7 @@ static NSString* animationKey = @"transform.scale";
 {
     CABasicAnimation* theAnimation;
     theAnimation = [CABasicAnimation animationWithKeyPath:animationKey];
-    theAnimation.delegate = self;
+    theAnimation.delegate = [YYWeakProxy proxyWithTarget:self];
     theAnimation.duration = 0.1;
     theAnimation.repeatCount = 0;
     theAnimation.removedOnCompletion = FALSE;
