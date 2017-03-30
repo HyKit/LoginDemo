@@ -143,4 +143,33 @@
     // Configure the view for the selected state
 }
 
+
+
+/*
+ +load和+initialize的  区别是什么？
+ +（void）load;
+ 当类对象被引入项目时，runtime会想每一个类对象发送load消息
+ load方法会在每一个类甚至每一个分类被引入时仅调用一次，调用的顺序：父类优先于子类，子类优先于分类
+ load方法不会被类自动继承
+ 
+ +（void）initialize;
+ 也是在第一次使用这个类的时候会调用这个方法；
+ 
+ 
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @end

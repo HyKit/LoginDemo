@@ -18,8 +18,12 @@
 #import "AppDelegate.h"
 #import "PIPViewController.h"
 #import "AddressViewController.h"
+#import "MapViewController.h"
+#import "User.h"
 
-@interface HomePageVC () <HBannerViewDelegate, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate>
+
+
+@interface HomePageVC () <HBannerViewDelegate, UISearchBarDelegate>
 {
     HBannerView *_bannerView;
     UISearchBar *_searchBar;
@@ -53,7 +57,7 @@
     [self.navigationController setNavigationBarHidden:YES animated:YES];
 }
 - (void)configButton {
-    NSArray *buttonArrayName = @[@"button 高亮方法", @"MVC", @"IV渲染red", @"IV渲染cyan", @"imageview美化", @"左滑删除"];
+    NSArray *buttonArrayName = @[@"button 高亮方法", @"MVC", @"IV渲染red", @"IV渲染cyan", @"imageview美化", @"左滑删除", @"地图"];
     for (NSInteger i = 0; i < buttonArrayName.count; i++) {
         
         UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -96,6 +100,9 @@
         case 5: //左滑删除
             [self toDeleteAnimation];
             break;
+        case 6: //地图
+            [self toMapVC];
+            break;
         default:
             break;
     }
@@ -106,30 +113,6 @@
     [super viewDidAppear:animated];
 //    [self setSearchView];
 }
-//- (void)setSearchView {
-//    if (!_searchBar) {
-//        
-//        
-//        UIView *bgView = [[UIView alloc] initWithFrame:CGRectMake(50, 100, ScreenWidth - 100, 44)];
-//        bgView.backgroundColor = [UIColor colorWithRed:0.8702 green:0.8702 blue:0.8702 alpha:1.0];
-//        [self.view addSubview:bgView];
-//        
-//        
-//        
-//        _searchBar = [[UISearchBar alloc] initWithFrame:CGRectMake(50, 0, ScreenWidth - 100, 49)];
-//        _searchBar.placeholder = @"input  cargo name";
-//        _searchBar.delegate = self;
-//        
-//        
-//        [self.navigationController.navigationBar addSubview:_searchBar];
-//    }
-//
-//}
-//- (BOOL)searchBarShouldBeginEditing:(UISearchBar *)searchBar {
-//    [self toDropDownSearchVC];
-//    return YES;
-//}
-
 - (void)setApplicationBadgeNumber {
     /**
      *  //设置应用程序图标右上角的红色提醒数字
@@ -188,6 +171,8 @@
     
 }
 
+
+#pragma mark-- 跳转到详情页面
 
 
 - (void)toWebView:(NSDictionary *)dict {
@@ -257,6 +242,8 @@
 }
 
 
+#pragma mark -- 点击按钮跳转方法
+
 //在我们使用应用的时候，每当有网络请求产生时，我们总是可以在状态栏看到一个转动的网络请求标志。这个标志并不是在网络请求发生的时候自动出现的，需要在代码中手动启动和关闭。
 - (void)setNetworkStatus {
     [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];// 启动状态栏网络请求指示
@@ -284,7 +271,72 @@
 }
 
 
+- (void)toMapVC {
+    MapViewController *vc = [[MapViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+    
+}
+
+
+- (void)get {
+    
+    
+    MovieModel *model = [MovieModel new];
+    //count 记录变量的数量Ivar 是runtime声明的一个宏
+    unsigned int count = 0;
+    Ivar *members = class_copyIvarList([MovieModel class], &count);
+    
+    //获取类的所有属性变量
+    for (int i = 0; i < count; i++) {
+        Ivar ivar = members[i];
+        //将Ivar变量转化为字符串，这里获得了属性名
+        const char *memberName = ivar_getName(ivar);
+        
+        NSLog(@"%s", memberName);
+        
+        Ivar m_name = members[0];
+        //修改属性值
+        object_setIvar(model, m_name, @"zhangsan");
+        //打印后发现 Model  中的name  变为了zhangsan
+        NSLog(@"%@", [model description]);
+    }
+    
+}
+
+
+- (void)interview {
+    //
+}
+
+/*
+
+
+ 
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @end
+
 
 
 

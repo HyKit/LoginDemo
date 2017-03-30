@@ -13,6 +13,8 @@
 #import "CustomButtonVC.h"
 #import "ViewController.h"
 
+#import <AMapFoundationKit/AMapFoundationKit.h>
+
 
 
 #endif /* AppDelegateHeader_h */

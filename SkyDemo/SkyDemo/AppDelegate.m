@@ -26,6 +26,7 @@
 
     [self setAppStatusBar];
     [self setNavigationBar];
+    [self initAMap];
     
     return YES;
 }
@@ -140,6 +141,13 @@
     }
 }
 
+
+//高德 key c6d09ce362c100c2f06f75530e6afa87
+- (void)initAMap {
+
+    [AMapServices sharedServices].apiKey = @"c6d09ce362c100c2f06f75530e6afa87";
+
+}
 
 
 @end

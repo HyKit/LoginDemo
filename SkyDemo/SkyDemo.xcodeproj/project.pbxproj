@@ -121,6 +121,7 @@
 		BD68F05B1D485B37000B77D7 /* PopMenuModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BD68F0561D485B37000B77D7 /* PopMenuModel.m */; };
 		BD68F05C1D485B37000B77D7 /* UIColor+ImageGetColor.m in Sources */ = {isa = PBXBuildFile; fileRef = BD68F0581D485B37000B77D7 /* UIColor+ImageGetColor.m */; };
 		BD68F0601D485C5F000B77D7 /* PopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD68F05F1D485C5F000B77D7 /* PopViewController.m */; };
+		BD7BD9101E8C96E200BDFE5D /* AppDelegate+Notiication.m in Sources */ = {isa = PBXBuildFile; fileRef = BD7BD90F1E8C96E200BDFE5D /* AppDelegate+Notiication.m */; };
 		BD7DA7F71E88A52D00450913 /* UIImage+Extra.m in Sources */ = {isa = PBXBuildFile; fileRef = BD7DA7F61E88A52D00450913 /* UIImage+Extra.m */; };
 		BD7DA7FB1E88A64400450913 /* PIPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD7DA7F91E88A64400450913 /* PIPViewController.m */; };
 		BD7DA7FC1E88A64400450913 /* PIPViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD7DA7FA1E88A64400450913 /* PIPViewController.xib */; };
@@ -140,6 +141,9 @@
 		BD7DA8271E88B8C200450913 /* MGSwipeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BD7DA8181E88B8C200450913 /* MGSwipeButton.m */; };
 		BD7DA8281E88B8C200450913 /* MGSwipeTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BD7DA81A1E88B8C200450913 /* MGSwipeTableCell.m */; };
 		BD7DA82A1E88B91700450913 /* AddressViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD7DA8291E88B91700450913 /* AddressViewController.xib */; };
+		BD7DA82E1E8A0D0000450913 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD7DA82D1E8A0D0000450913 /* MapViewController.m */; };
+		BD7DA8311E8A431F00450913 /* HPUser.m in Sources */ = {isa = PBXBuildFile; fileRef = BD7DA8301E8A431F00450913 /* HPUser.m */; };
+		BD7DA8351E8A586400450913 /* NSObject+test.m in Sources */ = {isa = PBXBuildFile; fileRef = BD7DA8341E8A586400450913 /* NSObject+test.m */; };
 		BD8786941D6D2DA80097AE80 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = BD87868F1D6D2DA80097AE80 /* 1.png */; };
 		BD8786951D6D2DA80097AE80 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = BD8786901D6D2DA80097AE80 /* 2.png */; };
 		BD8786961D6D2DA80097AE80 /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = BD8786911D6D2DA80097AE80 /* 3.png */; };
@@ -385,6 +389,8 @@
 		BD68F0581D485B37000B77D7 /* UIColor+ImageGetColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ImageGetColor.m"; sourceTree = "<group>"; };
 		BD68F05E1D485C5F000B77D7 /* PopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopViewController.h; sourceTree = "<group>"; };
 		BD68F05F1D485C5F000B77D7 /* PopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopViewController.m; sourceTree = "<group>"; };
+		BD7BD90E1E8C96E200BDFE5D /* AppDelegate+Notiication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+Notiication.h"; sourceTree = "<group>"; };
+		BD7BD90F1E8C96E200BDFE5D /* AppDelegate+Notiication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+Notiication.m"; sourceTree = "<group>"; };
 		BD7DA7F51E88A52D00450913 /* UIImage+Extra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extra.h"; sourceTree = "<group>"; };
 		BD7DA7F61E88A52D00450913 /* UIImage+Extra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extra.m"; sourceTree = "<group>"; };
 		BD7DA7F81E88A64400450913 /* PIPViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PIPViewController.h; sourceTree = "<group>"; };
@@ -413,6 +419,12 @@
 		BD7DA8191E88B8C200450913 /* MGSwipeTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGSwipeTableCell.h; sourceTree = "<group>"; };
 		BD7DA81A1E88B8C200450913 /* MGSwipeTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGSwipeTableCell.m; sourceTree = "<group>"; };
 		BD7DA8291E88B91700450913 /* AddressViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddressViewController.xib; sourceTree = "<group>"; };
+		BD7DA82C1E8A0D0000450913 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		BD7DA82D1E8A0D0000450913 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		BD7DA82F1E8A431F00450913 /* HPUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPUser.h; sourceTree = "<group>"; };
+		BD7DA8301E8A431F00450913 /* HPUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPUser.m; sourceTree = "<group>"; };
+		BD7DA8331E8A586400450913 /* NSObject+test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+test.h"; sourceTree = "<group>"; };
+		BD7DA8341E8A586400450913 /* NSObject+test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+test.m"; sourceTree = "<group>"; };
 		BD87868F1D6D2DA80097AE80 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
 		BD8786901D6D2DA80097AE80 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
 		BD8786911D6D2DA80097AE80 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
@@ -695,6 +707,8 @@
 			children = (
 				BD26B0B71D3DD0C400AB4164 /* HomePageVC.h */,
 				BD26B0B81D3DD0C400AB4164 /* HomePageVC.m */,
+				BD7DA82F1E8A431F00450913 /* HPUser.h */,
+				BD7DA8301E8A431F00450913 /* HPUser.m */,
 				BD5247E61E83C53B00FE69E2 /* CustomButtonVC.h */,
 				BD5247E71E83C53B00FE69E2 /* CustomButtonVC.m */,
 				BD7DA7F51E88A52D00450913 /* UIImage+Extra.h */,
@@ -1100,6 +1114,24 @@
 			path = MGSwipeTableCell;
 			sourceTree = "<group>";
 		};
+		BD7DA82B1E8A0CF300450913 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				BD7DA82C1E8A0D0000450913 /* MapViewController.h */,
+				BD7DA82D1E8A0D0000450913 /* MapViewController.m */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		BD7DA8321E8A585500450913 /* Questions */ = {
+			isa = PBXGroup;
+			children = (
+				BD7DA8331E8A586400450913 /* NSObject+test.h */,
+				BD7DA8341E8A586400450913 /* NSObject+test.m */,
+			);
+			path = Questions;
+			sourceTree = "<group>";
+		};
 		BD87868E1D6D2DA80097AE80 /* photo */ = {
 			isa = PBXGroup;
 			children = (
@@ -1130,6 +1162,7 @@
 		BD8B23BB1D3DC13B007A8211 /* Page */ = {
 			isa = PBXGroup;
 			children = (
+				BD7DA82B1E8A0CF300450913 /* Map */,
 				BD26B0B21D3DD09A00AB4164 /* HomePage */,
 				BDABB5CB1D49DB2D002E1B43 /* Other */,
 				BD68F05D1D485C48000B77D7 /* PopView */,
@@ -1238,8 +1271,11 @@
 		BDAE496F1D3CBA6F00689048 /* SkyDemo */ = {
 			isa = PBXGroup;
 			children = (
+				BD7DA8321E8A585500450913 /* Questions */,
 				BDAE49731D3CBA6F00689048 /* AppDelegate.h */,
 				BDAE49741D3CBA6F00689048 /* AppDelegate.m */,
+				BD7BD90E1E8C96E200BDFE5D /* AppDelegate+Notiication.h */,
+				BD7BD90F1E8C96E200BDFE5D /* AppDelegate+Notiication.m */,
 				BD98FE561E84E4A80093A297 /* AppDelegateHeader.h */,
 				BDAE49791D3CBA6F00689048 /* Main.storyboard */,
 				BD9E252C1D3DB467006C9FD5 /* SkyDemo.entitlements */,
@@ -1586,6 +1622,7 @@
 				BDC15D401D4611F5003FBBC0 /* PhotoAnimationVC.m in Sources */,
 				BD151EDF1D476C6400F2DAE1 /* BaseViewController.m in Sources */,
 				BD151EDE1D476C6400F2DAE1 /* BaseAnimationController.m in Sources */,
+				BD7BD9101E8C96E200BDFE5D /* AppDelegate+Notiication.m in Sources */,
 				BD4C93151D41BDA300AD1359 /* RootWebViewController.m in Sources */,
 				BD5248671E84B61300FE69E2 /* BlogViewCell.m in Sources */,
 				BD4F87F81D645C3E00016392 /* rilegouleView.m in Sources */,
@@ -1656,6 +1693,7 @@
 				BDEFC3A91D61B5BA00BCBEC9 /* CustomAlertView.m in Sources */,
 				BD071EF81D5D9D5C00F625B5 /* OMGToast.m in Sources */,
 				BD68F0591D485B37000B77D7 /* HyPopMenuView.m in Sources */,
+				BD7DA82E1E8A0D0000450913 /* MapViewController.m in Sources */,
 				BD5248541E84B61300FE69E2 /* DraftTableViewController.m in Sources */,
 				BDED5DC31D54380A008FC522 /* NSObject+NewBeeNotification.m in Sources */,
 				BDAE49721D3CBA6F00689048 /* main.m in Sources */,
@@ -1667,7 +1705,9 @@
 				BD5248551E84B61300FE69E2 /* UserInfoViewController.m in Sources */,
 				BD7DA8281E88B8C200450913 /* MGSwipeTableCell.m in Sources */,
 				BDC157441D45B007003FBBC0 /* PointsViewController.m in Sources */,
+				BD7DA8351E8A586400450913 /* NSObject+test.m in Sources */,
 				BD26B0B91D3DD0C400AB4164 /* HomePageVC.m in Sources */,
+				BD7DA8311E8A431F00450913 /* HPUser.m in Sources */,
 				BD5248611E84B61300FE69E2 /* DraftViewController.m in Sources */,
 				BDED5DC41D54380A008FC522 /* NSObject+PerformBlock.m in Sources */,
 				BD4F87FB1D64621E00016392 /* ShowMovieViewController.m in Sources */,
